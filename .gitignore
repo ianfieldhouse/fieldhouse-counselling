@@ -1,2 +1,5 @@
 # ignore .DS_Store files created when viewing directories in the Finder
 .DS_Store
+
+# ignore JetBrains project files
+.idea*
