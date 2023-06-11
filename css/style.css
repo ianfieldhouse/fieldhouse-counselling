@@ -23,11 +23,16 @@ html {
 body {
   /*background: #ffffff url(../img/fieldhouse.png) no-repeat center center fixed;*/
 
-  background-color: rgb(138, 43, 226);
+  background-color: rgba(221, 197, 252, 0.22);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+main {
+  z-index: 100;
+  margin-top: -4em !important;
 }
 
 .cover-container {
@@ -35,13 +40,33 @@ body {
   background-color: white;
 }
 
+h2 {
+  margin-top: 1.5em;
+  color: rgb(134, 100, 180);
+}
+
+#portrait-photo {
+  margin: 0 0 1.5em 1.5em;
+  border: 5px solid rgb(134, 100, 180, 0.8);
+  float: right;
+}
+
+#map {
+  /*float: right;*/
+  height: 300px;
+  border: 5px solid rgb(134, 100, 180, 0.8);
+}
+
+address {
+  margin-left: 1.5em;
+}
 
 /*
  * Header
  */
 
 .nav-masthead .nav-link {
-  color: rgba(255, 255, 255, .5);
+  color: rgba(255, 255, 255, 0.5);
   border-bottom: .25rem solid transparent;
 }
 
@@ -58,3 +83,29 @@ body {
   color: #fff;
   border-bottom-color: #fff;
 }
+
+a {
+  text-decoration: none;
+}
+
+a[href^='mailto']::before {
+    content: '✉️️ ';
+}
+
+a[href^='tel']::before {
+    content: '📞 ';
+}
+
+#logos {
+  margin-top: 2.5em
+}
+
+#logos > a > img {
+  margin: 1.0em;
+}
+
+#copyright {
+  margin-top: 2em;
+  font-size: small;
+}
+
