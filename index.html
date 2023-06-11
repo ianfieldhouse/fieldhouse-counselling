@@ -24,8 +24,12 @@
     <link rel="icon" href="https://getbootstrap.com//docs/5.3/assets/img/favicons/favicon.ico">
     <meta name="theme-color" content="#712cf9">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
 </head>
-<body class="min-h-screen d-flex h-100 text-bg-light">
+<!--<body class="min-h-screen d-flex h-100 text-bg-light">-->
+<body class="min-h-screen d-flex h-100">
 
 <div class="d-flex w-100 h-100 flex-column">
     <header>
@@ -36,18 +40,19 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
 <!--                    <img src="./img/house-in-lavender-field.png" width="100%" height="100%"-->
-                    <img src="https://via.placeholder.com/1000x250" width="100%" height="100%"
+<!--                    <img src="https://via.placeholder.com/1000x250" width="100%" height="100%"-->
+                    <img src="img/banner.png" width="100%" height="100%" alt="Lavender field in Provence" />
 <!--                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"-->
 <!--                         aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">-->
 <!--                        <rect width="100%" height="100%" fill="#777"></rect>-->
 <!--                    </svg>-->
 
-                    <div class="container">
-                        <div class="carousel-caption text-start">
-                            <h1>Yvonne Fieldhouse Counselling</h1>
-                            <h2>A warm and safe place to talk</h2>
-                        </div>
-                    </div>
+<!--                    <div class="container">-->
+<!--                        <div class="carousel-caption text-start">-->
+<!--                            <h1>Yvonne Fieldhouse Counselling</h1>-->
+<!--                            <h2>A warm and safe place to talk</h2>-->
+<!--                        </div>-->
+<!--                    </div>-->
                 </div>
             </div>
         </div>
@@ -55,30 +60,86 @@
 
     <main class="cover-container d-flex flex-column mx-auto p-5">
         <div>
-            <h3 class="fs-2">My Personal Experience of Counselling</h3>
+            <div class="d-flex justify-content-center"><img id="logo" src="img/fieldhouse-counselling-logo.png" alt="fieldhouse Couselling" height="200" /></div>
+<!--            <p><img id="logo" src="img/fieldhouse-counselling-logo.png" alt="fieldhouse Couselling" height="150" /></p>-->
+
+            <h2>A Warm and Safe Place to Talk</h2>
+
+            <img id="portrait-photo" alt="Photo of Yvonne" src="img/yvonne.png" height="150" width="130"/>
+            <p>
+                My name is Yvonne Fieldhouse, and I offer a safe, non-judgmental space where you can open up, explore,
+                and work through problems in a confidential environment.
+            </p>
+            <p>
+                I have experience working with young people and adults, supporting them with bereavement, relationship
+                difficulties, work-related issues, anxiety, depression, anger, self-criticism and lack of self-belief.
+            </p>
+            <p>
+                I am a qualified counsellor with a Diploma in Counselling using Transactional Analysis.
+                Transactional Analysis can help people find effective ways to communicate and eliminate unhelpful
+                thoughts, feelings, and actions.  It can help people take responsibility for their beliefs and actions
+                and can be applied to many problems.
+            </p>
+            <p>
+                I am a member of <a href="https://www.uka4ta.co.uk/home"
+                                    title="The UK Association for  Transactional Analysis"
+                                    aria-label="The UK Association for  Transactional Analysis">UKATA</a> and registered
+                member of <a href="https://www.bacp.co.uk"
+                             title="The British Association for Counselling and Psychotherapy"
+                             aria-label="The British Association for Counselling and Psychotherapy">BCAP</a>, and I 
+                adhere to their Code of Ethics. I hold professional indemnity insurance for the work I do and I am 
+                registered with <a href="https://www.mygov.scot/organisations/disclosure-scotland">Disclosure Scotland</a>.
+            </p>
+
+            <h2>My Personal Experience of Counselling</h2>
             <p>
                 Life can be difficult at times, and we may need help to process our grief, difficulties in the
-                relationship, Work related issues, anxiety, depression, anger, Self-criticism and lack of
-                self-belief. I struggled with self-criticism and a lack of self-belief. It wasn't until late on
-                in my life when I began my counselling journey that this started to change. That is why I am
-                passionate about using Transactional Analysis to help challenge the unhelpful beliefs we can
-                hold about ourselves.
+                relationship, work-related issues, anxiety, depression, anger, Self-criticism and lack of self-belief.
+                I struggled with Self-criticism and a lack of self-belief.  It was not until late in my life, when I
+                began my counselling journey, that this started to change.  That is why I am passionate about using
+                Transactional Analysis to help challenge the unhelpful beliefs we can hold about ourselves.
             </p>
-            <h3 class="fs-2">What is Transactional Analysis?</h3>
+            <h2>What is Transactional Analysis?</h2>
             <p>
-                It is a theory of personality that can be used for personal growth, to better understand oneself
-                and others by finding more effective ways to communicate.
+                It’s a theory of personality that can be used for personal growth to better understand oneself and
+                others by finding more effective ways to communicate.  If you would like to find out more, visit:<br />
+                <a href="https://www.uka4ta.co.uk/copy-of-what-is-ta">https://www.uka4ta.co.uk/copy-of-what-is-ta</a>
             </p>
-            <h3 class="fs-2">Therapy sessions</h3>
-            <p>
-                Choosing the right person to support you in your therapeutic journey is an important step so its
-                important to find the right person to start your journey with.
-            </p>
+            <h2>Therapy sessions</h2>
+<!--            <p>-->
+<!--                Choosing the right person to support you in your therapeutic journey is an important step so its-->
+<!--                important to find the right person to start your journey with.-->
+<!--            </p>-->
             <p>Please get in touch if you are interested in an initial free call to discuss your needs.</p>
+            <p>Based in Edinburgh/Livingston, I offer face-to-face session at:</p>
+           <address>The Bridge Wellbeing Hub,<br />
+                20 Shairps Business Park,<br />
+                Livingston,<br />
+                EH54 5FD</address>
+
+            <p>and online or telephone counselling at £40 per 50-minute session.</p>
+             <div id="map"></div>
+
+            <h2>Contact</h2>
             <p>
-                Based in Edinburgh/Livingston, I offer face-to-face, online, and telephone counselling at a cost
-                of £45 per 50-minute session.
+                <a href="mailto:info@fieldhousecounselling.com">info@fieldhousecounselling.com</a><br />
+                <a href="tel:+44 7706 796335">+44 7759 612 702</a>
             </p>
+
+            <div id="logos" class="d-flex justify-content-center">
+                <a href="https://www.bacp.co.uk"
+                   title="The British Association for Counselling and Psychotherapy"
+                   aria-label="The British Association for Counselling and Psychotherapy">
+                    <img src="img/bacp-logo.png" alt="BCAP Logo" height="75px" />
+                </a>
+                <a href="https://www.uka4ta.co.uk/home"
+                   title="The UK Association for  Transactional Analysis"
+                   aria-label="The UK Association for  Transactional Analysis">
+                    <img src="img/ukata-logo.png" alt="UKATA Logo" width="75px" height="75px" />
+                </a>
+            </div>
+
+            <div id="copyright" class="d-flex justify-content-center">&copy; 2023 Fieldhouse Counselling. All rights reserved</div>
         </div>
     </main>
 
@@ -92,5 +153,17 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+<script>
+    let map = L.map('map').setView([55.9078651, -3.5116521], 12);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+    var marker = L.marker([55.9078651, -3.5116521]).addTo(map);
+    marker.bindPopup("The Bridge Wellbeing Hub").openPopup();
+</script>
 </body>
 </html>
